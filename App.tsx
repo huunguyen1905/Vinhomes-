@@ -23,12 +23,12 @@ const Preloader: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   const [isExiting, setIsExiting] = useState(false);
 
   useEffect(() => {
-    // Tăng tốc độ Intro: Hiện 3s rồi bắt đầu hiệu ứng biến mất trong 1s
+    // Tăng thời gian hiển thị Intro: Hiện 5s (tăng từ 3s) rồi bắt đầu hiệu ứng biến mất
     const timer = setTimeout(() => {
       setIsExiting(true);
       // Notify parent slightly later to unmount
       setTimeout(onComplete, 1000); // Exit animation duration (1s)
-    }, 3000); // Wait 3s before exiting (increased from 1s)
+    }, 5000); // Wait 5s before exiting
     return () => clearTimeout(timer);
   }, [onComplete]);
 

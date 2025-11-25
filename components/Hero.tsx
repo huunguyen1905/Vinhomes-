@@ -41,9 +41,8 @@ const Hero: React.FC = () => {
              />
           )}
 
-          {/* Layer 3: Cinematic Grading Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#012822]/40 via-transparent to-[#012822]/90 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-black/20"></div>
+          {/* Layer 3: Cinematic Grading Overlay (Reduced opacity to keep image clear) */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#012822]/30 via-transparent to-[#012822]/80"></div>
       </div>
 
       {/* Hero Content - Staggered Reveal */}
