@@ -13,7 +13,7 @@ const defaultContent = {
     title1: "SIÊU ĐÔ THỊ BIỂN ESG++",
     title2: "Tâm điểm Vui chơi - giải trí - nghỉ dưỡng",
     desc: "Nơi hội tụ tinh hoa đất trời, kiến tạo chuẩn mực sống thượng lưu mới tại Việt Nam.", 
-    bgImage: "https://images.unsplash.com/photo-1580587771525-78b9dba3b91d?q=80&w=2874&auto=format&fit=crop",
+    bgImage: "https://i.imgur.com/sQLOVhD.jpeg",
     // CHANGED: New Waterfall/Stream video as requested (Fix complete)
     videoUrl: "https://cdn.pixabay.com/video/2024/06/10/216134_small.mp4",
     stats_number: "2,870",
