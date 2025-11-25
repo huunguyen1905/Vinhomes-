@@ -5,28 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>Vinhomes Green Paradise Cần Giờ - Masterpiece of Living</title>
     <meta name="description" content="Siêu Đô thị ESG++ Xanh – Thông minh – Sinh thái & Tái sinh hàng đầu thế giới." />
-
-    <!-- Favicon/logo hiển thị trên tab trình duyệt -->
-    <link rel="icon" type="image/png" href="https://vinhomesgreenparadises.vn/wp-content/uploads/2025/09/vinhomes-green-paradise-logo-1-1024x918.png" sizes="48x48">
-    <link rel="shortcut icon" href="https://vinhomesgreenparadises.vn/wp-content/uploads/2025/09/vinhomes-green-paradise-logo-1-1024x918.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://vinhomesgreenparadises.vn/wp-content/uploads/2025/09/vinhomes-green-paradise-logo-1-1024x918.png">
-
-    <!-- Open Graph Meta Tags (SEO/Preview Facebook, Zalo...) -->
-    <meta property="og:title" content="Vinhomes Green Paradise Cần Giờ - Masterpiece of Living" />
-    <meta property="og:description" content="Siêu Đô thị ESG++ Xanh – Thông minh – Sinh thái & Tái sinh hàng đầu thế giới." />
-    <meta property="og:url" content="https://vinhomes-pi.vercel.app" />
-    <meta property="og:image" content="https://vinhomesgreenparadises.vn/wp-content/uploads/2025/10/benner-vinhomes-green-paradise.png" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Vinhomes Green Paradise" />
-    <meta property="og:locale" content="vi_VN" />
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Vinhomes Green Paradise Cần Giờ - Masterpiece of Living" />
-    <meta name="twitter:description" content="Siêu Đô thị ESG++ Xanh – Thông minh – Sinh thái & Tái sinh hàng đầu thế giới." />
-    <meta name="twitter:image" content="https://vinhomesgreenparadises.vn/wp-content/uploads/2025/10/benner-vinhomes-green-paradise.png" />
-
-    <!-- Các thiết lập gốc của bạn (giữ nguyên như cũ) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -34,12 +12,12 @@
           extend: {
             colors: {
               brand: {
-                dark: '#012822',
-                primary: '#0D4138',
-                accent: '#1D6355',
-                gold: '#D4AF37',
-                champagne: '#F3E5AB',
-                sand: '#F5F2EB',
+                dark: '#012822', // Deepest Green
+                primary: '#0D4138', // Elegant Green
+                accent: '#1D6355', // Lighter Green
+                gold: '#D4AF37', // Metallic Gold
+                champagne: '#F3E5AB', // Light Gold
+                sand: '#F5F2EB', // Warm White
                 charcoal: '#1A1A1A'
               }
             },
@@ -124,32 +102,79 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Manrope:wght@200;300;400;600&display=swap" rel="stylesheet">
     <style>
-      ::-webkit-scrollbar { width: 0px; background: transparent; }
-      ::selection { background: #D4AF37; color: #012822; }
-      .bg-noise { position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; pointer-events: none; z-index: 9999; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); animation: grain 8s steps(10) infinite; mix-blend-mode: overlay; }
-      .text-stroke { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2); color: transparent; }
-      body.custom-cursor-active { cursor: none; }
-      @media (pointer: coarse) { body.custom-cursor-active { cursor: auto !important; } .custom-cursor { display: none !important; } }
-      .perspective-1000 { perspective: 1000px; }
-      .preserve-3d { transform-style: preserve-3d; }
-      .backface-hidden { backface-visibility: hidden; }
-    </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-        "react/": "https://aistudiocdn.com/react@^19.2.0/",
-        "react": "https://aistudiocdn.com/react@^19.2.0",
-        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-        "path": "https://aistudiocdn.com/path@^0.12.7",
-        "vite": "https://aistudiocdn.com/vite@^7.2.4",
-        "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
-        "url": "https://aistudiocdn.com/url@^0.11.4"
+      /* Luxury Scrollbar */
+      ::-webkit-scrollbar {
+        width: 0px; /* Hidden scrollbar for immersive feel */
+        background: transparent;
       }
-    }
-    </script>
-    <link rel="stylesheet" href="/index.css">
-  </head>
+      
+      /* Smooth Selection */
+      ::selection {
+        background: #D4AF37;
+        color: #012822;
+      }
+
+      /* Kinetic Noise Overlay */
+      .bg-noise {
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.035;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        animation: grain 8s steps(10) infinite;
+        mix-blend-mode: overlay;
+      }
+
+      /* Typography Utilities */
+      .text-stroke {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+        color: transparent;
+      }
+
+      /* CUSTOM CURSOR LOGIC */
+      body.custom-cursor-active {
+        cursor: none;
+      }
+      @media (pointer: coarse) {
+        body.custom-cursor-active {
+          cursor: auto !important;
+        }
+        .custom-cursor {
+          display: none !important;
+        }
+      }
+      
+      /* 3D Perspective Container */
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      .preserve-3d {
+        transform-style: preserve-3d;
+      }
+      .backface-hidden {
+        backface-visibility: hidden;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "url": "https://aistudiocdn.com/url@^0.11.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
   <body class="bg-brand-sand text-brand-dark antialiased overflow-x-hidden">
     <!-- SVG Filters for Liquid Distortion -->
     <svg style="position: absolute; width: 0; height: 0;">
@@ -162,6 +187,6 @@
     </svg>
     <div class="bg-noise"></div>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>
